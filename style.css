@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cornflowerblue;
+
+
+}
+.container{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+
+
+
+}
+
+.container .input-container{
+    border: 2px solid rgb(178, 178, 178);
+    border-radius: 4px;
+    margin-block: 20px;
+}
+.container .input-container:focus-within {
+
+    border-color: rgb(8, 137, 243);
+}
+
+.container .input-container input{
+    width: 150px;
+    outline: none;
+    border: none;
+
+
+
+}
+.container .input-container input,
+.container .input-container select{
+    width: 150px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+
+
+
+}
+.container .arrow{
+    font-size: 44px;
+}
+
+.container .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media  screen and (max-width:440px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container h1{
+        font-size: 22px;
+    }
+    
+    .container .input-container{
+        border: none;
+    }
+    .container .input-container input,
+    .container .input-container select{
+        border: 1px solid #ccc;
+
+        margin-block: 4px;
+        width: 100%;
+
+    }
+    
+}
